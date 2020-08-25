@@ -60,7 +60,7 @@ function downloadFile($file){
 if ($fileHandle !== FALSE) {
     // Get Headers
     if(!($columnArr = fgetcsv($fileHandle, 0, $csvDelimiter))){
-        echo "Error - Blank CSV";
+        echo "Error :  Blank CSV";
         die();
     }
     while ($row = fgetcsv($fileHandle, 0, $csvDelimiter)) {
